@@ -20,7 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  # Để lấy luôn theme Virgo
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -29,8 +29,11 @@ jobs:
           hugo-version: "0.150.0"
           extended: true
 
-      - name: Build
+      - name: Build with Hugo
         run: hugo --minify
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
