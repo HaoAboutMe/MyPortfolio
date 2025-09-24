@@ -1,0 +1,11 @@
+# Hugo build output
+/public
+/resources
+
+# IDE / Editor settings
+.idea
+.vscode
+
+# System files
+.DS_Store
+Thumbs.db

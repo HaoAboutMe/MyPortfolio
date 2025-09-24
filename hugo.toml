@@ -7,6 +7,7 @@ hasCJKLanguage = true
 summaryLength = 80
 enableGitInfo = true
 timeZone = 'Asia/Ho_Chi_Minh'
+ignoreLogs = ['warning-partial-superfluous-prefix']
 
 [pagination]
   pagerSize = 10000
@@ -14,7 +15,7 @@ timeZone = 'Asia/Ho_Chi_Minh'
 [params]
     dark = false                            # Mặc định chế độ sáng
     author = 'Nguyễn Lê Hoàn Hảo'
-    slogan = 'Cuộc sống nên thú vị.'        # Slogan cho homepage
+    slogan = 'To Infinity and Beyond'        # Slogan cho homepage
     startDate = 2024                        # 'Copyright © 2024 - hiện tại'
     # Kích hoạt hiệu ứng chuyển động khi tải trang
     hasActiveAnimate = true
@@ -61,14 +62,14 @@ timeZone = 'Asia/Ho_Chi_Minh'
         # Đặt background thành '', mặc định là `#000`
         # ! Để đảm bảo hiệu quả hiển thị, khuyến nghị chọn hình ảnh tỷ lệ 1:1
         # src = 'cat.svg'
-        src = 'us-cartoon--mustache.png'
+        src = 'wukong.png'
         background = '#0003'
         # Gắn chức năng liên kết nhấp chuột cho hình ảnh này, mặc định là `/about`, tất nhiên
         # bạn cũng có thể định nghĩa thành bất kỳ liên kết nào bạn muốn
         link = '/about'
 
     [params.contact]
-        icp = 'Giữ những điều yêu thích bên cạnh, đó là ý nghĩa của nỗ lực'          # Thông tin đăng ký, nếu không muốn hiển thị, đặt thành '' rỗng
+        icp = 'Không bao giờ trở thành con người mà ta từng ghét bỏ'          # Thông tin đăng ký, nếu không muốn hiển thị, đặt thành '' rỗng
         icplink = '/about'                                              # Liên kết đăng ký
         beian = ''                                                      # Đăng ký công an, nếu không muốn hiển thị, đặt thành '' rỗng
         beiancode = ''                                                  # Mã nhận dạng đăng ký công an

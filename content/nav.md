@@ -5,6 +5,16 @@ draft: false
 layout: "nav"
 ---
 
-# Trang điều hướng
+## 🧭 Điều hướng chính
 
-Chào mừng bạn đến với trang điều hướng của tôi!
+🏠 [Trang chủ](/) 
+
+✍️ [Tags](/tags/)
+
+---
+
+## 🔗 Liên kết cá nhân
+
+🐙 **GitHub:** [https://github.com/HaoAboutMe](https://github.com/HaoAboutMe)
+
+📘 **Facebook:** [https://www.facebook.com/haoaboutme.1512](https://www.facebook.com/haoaboutme.1512)

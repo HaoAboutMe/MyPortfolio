@@ -6,19 +6,19 @@ draft: false
 
 # Xin chào! Tôi là Nguyễn Lê Hoàn Hảo
 
-Tôi là một sinh viên năm 3 tại **Đại học Công nghệ TP.HCM (HUTECH)**, chuyên ngành Công nghệ Thông tin.
+Tôi là một sinh viên năm 4 tại **Đại học Công nghệ TP.HCM (HUTECH)**, chuyên ngành Công nghệ Phần Mềm.
 
 ## Về tôi
 
-- 🎓 **Học vấn**: Sinh viên năm 3 - Đại học Công nghệ TP.HCM (HUTECH)
+- 🎓 **Học vấn**: Sinh viên năm 4 - Đại học Công nghệ TP.HCM (HUTECH)
 - 💻 **Chuyên ngành**: Công nghệ Thông tin
 - 🌟 **Sở thích**: Lập trình, học hỏi công nghệ mới, và chia sẻ kiến thức
 
 ## Kỹ năng
 
-- **Ngôn ngữ lập trình**: Java, Python, JavaScript, C++
-- **Web Development**: HTML, CSS, JavaScript, React
-- **Database**: MySQL, MongoDB
+- **Ngôn ngữ lập trình**: Java, C#, Dart, JavaScript, C++, Python
+- **Web Development**: HTML, CSS, JavaScript, Bootstrap
+- **Database**: MySQL, MongoDB, SQL Server
 - **Tools**: Git, VS Code, IntelliJ IDEA
 
 ## Mục tiêu
@@ -27,7 +27,7 @@ Trở thành một lập trình viên fullstack giỏi và đóng góp cho cộn
 
 ## Liên hệ
 
-- 📧 **Email**: haoaboutme.1512@gmail.com
+- 📧 **Email**: nguyenlehoanhao2004@gmail.com
 - 🐙 **GitHub**: [HaoAboutMe](https://github.com/HaoAboutMe)
 - 📘 **Facebook**: [haoaboutme.1512](https://www.facebook.com/haoaboutme.1512)
 

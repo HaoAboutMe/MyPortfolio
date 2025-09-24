@@ -7962,7 +7962,7 @@
 					_width = _wiWidth;
 				}
 				_width = _screenWidth > 1026 ? _width : _screenWidth * 0.9;
-				// \u8BFB\u53D6 http \u56FE\u7247\u7684\u65F6\u5019\uFF0C\u5176\u9ED8\u8BA4\u5C3A\u5BF8\u4E3A 18 \uFF0C\u597D\u5947\u602A
+				// Khi \u0111\u1ECDc h\xECnh \u1EA3nh http, k\xEDch th\u01B0\u1EDBc m\u1EB7c \u0111\u1ECBnh l\xE0 18, r\u1EA5t l\u1EA1
 				console.log(_width);
 				if (_width < 30) { _width = 618 }
 				document.getElementById('img').width = _width;
