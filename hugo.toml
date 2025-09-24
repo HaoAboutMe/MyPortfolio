@@ -1,0 +1,145 @@
+baseURL = 'https://example.org/'
+languageCode = 'vi'
+title = 'Portfolio - Nguyễn Lê Hoàn Hảo'
+theme = 'virgo'
+
+hasCJKLanguage = true
+summaryLength = 80
+enableGitInfo = true
+timeZone = 'Asia/Ho_Chi_Minh'
+
+[pagination]
+  pagerSize = 10000
+
+[params]
+    dark = false                            # Mặc định chế độ sáng
+    author = 'Nguyễn Lê Hoàn Hảo'
+    slogan = 'Cuộc sống nên thú vị.'        # Slogan cho homepage
+    startDate = 2024                        # 'Copyright © 2024 - hiện tại'
+    # Kích hoạt hiệu ứng chuyển động khi tải trang
+    hasActiveAnimate = true
+    # Kích hoạt hiệu ứng hộp nổi
+    # hasActiveFloatingBox = true
+    # Trang bài viết có hiển thị các bài viết liên quan (khu vực bên trái trang)
+    isShowRelativePosts = true
+    # Trang điều hướng bên phải có hiển thị mini tìm kiếm Bing
+    isShowMinishipBoxOfNav = true
+    # Trang điều hướng có hiển thị khu vực tìm kiếm trên cùng
+    isShowShipBoxOfNav = true
+    # Trang điều hướng có hiển thị tìm kiếm trong trang (tìm kiếm nội dung bài viết)
+    # ... Desktop tự động cập nhật cache bài viết hàng ngày
+    # ... Mobile tự động cập nhật cache bài viết hàng tháng
+    # ... Có thể nhấp vào biểu tượng bên trái để cập nhật cache mới nhất
+    isShowLocalSearch = true
+    # Trang điều hướng có hiển thị danh sách bài viết gần đây
+    isShowRecentPostsOfNav = true
+
+    # Kích hoạt chế độ cool, mát mẻ nhưng tiêu tốn tài nguyên nhiều hơn,
+    # Trình duyệt có cache, sau khi thay đổi bắt buộc refresh trang (phím tắt Ctrl+Shift+R) hoặc khởi động lại dịch vụ local,
+    # ------------------
+    # <Cập nhật> Bây giờ có thể trực tiếp chỉnh sửa hình nền và độ trong suốt của mặt nạ hình nền ở đây
+    # - coolBackground file nằm trong thư mục `/static/imgs/bg`, mặc định là `default.jpg`
+    # - coolOpacity mặc định là 0.81, độ trong suốt màu nền, từ 0 ~ 1
+    # - coolSaturate mặc định là 180%, độ bão hòa màu nền, từ 0% ~ 200%
+    # - coolBlur mặc định là 6px, độ mờ màu nền, số càng lớn càng mờ
+    hasActiveCool = true
+    coolBackground = 'color.jpg'
+    coolOpacity = 0.69 # 0.86
+    coolSaturate = '180%'
+    coolBlur = '6px'
+    
+    # Hình ảnh/văn bản trang chủ
+    [params.img]
+        # Mặc định tích hợp sẵn `cat.svg ……`, tất nhiên bạn có thể
+        # đặt hình ảnh yêu thích vào thư mục `static/imgs/` và tham chiếu trong `src`,
+        # ❌ Bạn cũng có thể điều chỉnh kích thước hiển thị hình ảnh qua `width`,
+        # ❌ Nếu đặt `width` thành '' hoặc 0,
+        # ❌ sẽ sử dụng kích thước độ phân giải gốc của hình ảnh
+        # ❌ width = 90
+        # 🔔 Mục đích sử dụng biểu tượng đã thay đổi, không còn hỗ trợ đặt kích thước ở đây, nhưng
+        # Mới hỗ trợ đặt màu nền,
+        # Đặt background thành '', mặc định là `#000`
+        # ! Để đảm bảo hiệu quả hiển thị, khuyến nghị chọn hình ảnh tỷ lệ 1:1
+        # src = 'cat.svg'
+        src = 'us-cartoon--mustache.png'
+        background = '#0003'
+        # Gắn chức năng liên kết nhấp chuột cho hình ảnh này, mặc định là `/about`, tất nhiên
+        # bạn cũng có thể định nghĩa thành bất kỳ liên kết nào bạn muốn
+        link = '/about'
+
+    [params.contact]
+        icp = 'Giữ những điều yêu thích bên cạnh, đó là ý nghĩa của nỗ lực'          # Thông tin đăng ký, nếu không muốn hiển thị, đặt thành '' rỗng
+        icplink = '/about'                                              # Liên kết đăng ký
+        beian = ''                                                      # Đăng ký công an, nếu không muốn hiển thị, đặt thành '' rỗng
+        beiancode = ''                                                  # Mã nhận dạng đăng ký công an
+        github_user = 'HaoAboutMe'                                     # Tên người dùng Github, widget github trang điều hướng sử dụng
+        # wechat = 'imgs/bg/wechat.jpg'                                 # Địa chỉ mã QR WeChat
+        # weibo = 'https://weibo.com/u/6867589681'
+        # zhihu = 'https://www.zhihu.com/people/loveminimal'
+        # jianshu = 'https://www.jianshu.com/u/eebcc2974936'
+        email = 'haoaboutme.1512@gmail.com'
+        github = 'https://github.com/HaoAboutMe'
+        facebook = 'https://www.facebook.com/haoaboutme.1512'
+        # bilibili = 'https://space.bilibili.com/11608450'
+        # douyin = 'https://www.douyin.com/user/self'
+        # xiaohongshu = 'https://www.xiaohongshu.com/user/profile/60004c750000000001002065'
+        # reddit = 'https://www.reddit.com/user/aituyaa'
+        # twitter = 'https://twitter.com/aituyaa'
+        # mastodon = 'https://mastodon.social/@loveminimal'
+        # instagram = 'https://www.instagram.com/aituyaa'
+        # youtube = 'https://www.youtube.com/@aituyaa'
+        # telegram = 'https://web.telegram.org/k/#@aituyaa'	# 'https://t.me/aituyaa'
+        # discord = 'https://discord.com/channels/@me'
+
+        [params.contact.config]
+            color = '#696969'                         # Màu biểu tượng, mặc định là xám nhạt
+            slogan = ''                               # Khẩu hiệu liên hệ, không muốn hiển thị có thể để trống
+            # isShowNavLink = true                      # Có hiển thị liên kết điều hướng nhanh bên trái thanh liên hệ (PS: Trang chủ luôn hiển thị)
+            target = '_self'                          # Định nghĩa cách mở liên kết điều hướng nhanh bên trái, _blank trong tab mới _self trong tab hiện tại
+            ship = ''                                 # Biểu tượng thanh liên hệ, cho phép tùy chỉnh liên kết biểu tượng này (/ship cho trang tìm kiếm cá nhân hóa liên kết ngoài); ẩn, đặt thành '' rỗng
+
+    # https://utteranc.es/
+    # Trong môi trường phát triển (http://localhost:1313/), không kích hoạt plugin bình luận,
+    # Nếu muốn kích hoạt trong môi trường phát triển, sửa cổng máy chủ, như sau
+    # hugo server -p=1314
+    [params.utterances]
+        active = false                            # Có kích hoạt plugin bình luận
+        repo = "HaoAboutMe/comment"              # Nhập tên repository của bạn
+        issueTerm = "pathname"
+        theme = "github-light"
+        crossorigin = "anonymous"
+
+    # Trong môi trường phát triển (http://localhost:1313/), không kích hoạt plugin bình luận,
+    # Nếu muốn kích hoạt trong môi trường phát triển, sửa cổng máy chủ, như sau
+    # hugo server -p=1314
+    # ---------
+    # Trong https://giscus.app/, chọn cấu hình sau sẽ tự động tạo, như data-*
+    # Mặc định bật data-loading="lazy"
+    [params.giscus]
+        active = false                             # Có kích hoạt plugin bình luận
+        repo = "HaoAboutMe/comment"              # Nhập tên repository của bạn
+        repoId = "R_kgDOJNJQ8g"
+        category="General"
+        categoryId="DIC_kwDOJNJQ8s4CYl0m"
+        mapping = "title"
+        inputPosition = "bottom"
+        theme = "noborder_light"
+        crossorigin = "anonymous"
+        lang = "vi"
+
+# Các thiết lập sau cho engine phân tích Markdown,
+# Khuyến nghị giữ nguyên
+[markup]
+    [markup.asciidocExt]
+        preserveTOC = true
+    [markup.highlight]
+        # Kiểu hiển thị khối mã, hiển thị số dòng
+        style = "github"
+        lineNos = true
+    [markup.tableOfContents]
+        endLevel = 4
+        ordered = false
+        startLevel = 2
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
