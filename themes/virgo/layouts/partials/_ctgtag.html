@@ -3,7 +3,7 @@
         <div class="tag">
             <!-- {{ with .Params.tags }} <img src="{{ "imgs/icons/tag.svg" | relURL }}" width="16" /> {{ end }} -->
             {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+            <a href="{{ printf "tags/%s" (. | urlize) | relURL }}">{{ . }}</a>
             {{ end }}
         </div>
     </div>
