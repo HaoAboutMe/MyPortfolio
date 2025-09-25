@@ -66,11 +66,11 @@ ignoreLogs = ['warning-partial-superfluous-prefix']
         background = '#0003'
         # Gắn chức năng liên kết nhấp chuột cho hình ảnh này, mặc định là `/about`, tất nhiên
         # bạn cũng có thể định nghĩa thành bất kỳ liên kết nào bạn muốn
-        link = '/about'
+        link = '/MyPortfolio/about'
 
     [params.contact]
         icp = 'Không bao giờ trở thành con người mà ta từng ghét bỏ'          # Thông tin đăng ký, nếu không muốn hiển thị, đặt thành '' rỗng
-        icplink = '/about'                                              # Liên kết đăng ký
+        icplink = '/MyPortfolio/about'                                              # Liên kết đăng ký
         beian = ''                                                      # Đăng ký công an, nếu không muốn hiển thị, đặt thành '' rỗng
         beiancode = ''                                                  # Mã nhận dạng đăng ký công an
         github_user = 'HaoAboutMe'                                     # Tên người dùng Github, widget github trang điều hướng sử dụng

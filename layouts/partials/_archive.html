@@ -22,7 +22,7 @@
             {{ if and (eq .Type "tags") (ne .Title "Tags") (ne .Title "Secrets")}}
                 <div class="arc-item">
                     <div class="arc-desc">
-                        <a href="{{.Permalink}}"><img src="/imgs/icons/tag.svg" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
+                        <a href="{{.Permalink}}"><img src="{{ "imgs/icons/tag.svg" | relURL }}" width="16" /> {{ .Title }} <sup>{{len .Pages}}</sup></a>
                     </div>
 
                     <div class="arc-post">

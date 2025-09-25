@@ -5,7 +5,7 @@
         <!-- Số đăng ký công an -->
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{ .Site.Params.contact.beiancode }}">
             {{ with .Site.Params.contact.beian }}
-            <img src="/imgs/beian.png" />
+            <img src="{{ "imgs/beian.png" | relURL }}" />
             <p>{{ . }}</p>
             {{ end }}
 
