@@ -10,7 +10,7 @@
 
     <!-- Danh sách bài viết không bị trùng lặp -->
     <div class="container-posts">
-        <div class="count">Có tổng cộng {{ len .Site.RegularPages }} bài viết</div>
+        <div class="count">Có tổng cộng {{ len (where .Site.RegularPages "Section" "posts") }} bài viết</div>
         
         <div class="posts-list">
             {{ range (.Paginate (.Site.RegularPages.ByDate.Reverse)).Pages }}

@@ -1,5 +1,5 @@
 <div class="container-archive">
-    <div class="count">Có tổng cộng {{ len .Pages }} bài viết</div>
+    <div class="count">Có tổng cộng {{ len (where .Site.RegularPages "Section" "posts") }} bài viết</div>
     
     <!-- Bài viết gần đây -->
     <div class="recentf">
