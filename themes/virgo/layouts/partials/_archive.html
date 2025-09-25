@@ -1,0 +1,51 @@
+<div class="container-archive">
+    <div class="count">Có tổng cộng {{ len .Pages }} bài viết</div>
+    
+    <!-- Bài viết gần đây -->
+    <div class="recentf">
+        <span class="desc">- Cập nhật gần đây ➭</span>
+        {{  range first 8 .Site.RegularPages.ByLastmod.Reverse }}
+            <!-- {{.Type}} -->
+            {{ if eq .Type "page" }}
+            <div class="rec-post">
+                <div class="rec-post-item">
+                    <a href="{{.Permalink}}">{{ .Title }}</a>
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+    
+	<!-- Tất cả bài viết -->
+    <div class="posts">
+        <div class="arc-item">
+            <div class="arc-desc">
+                <img src="{{ "imgs/icons/document.svg" | relURL }}" width="16" /> Tất cả bài viết <sup>{{len .Site.RegularPages}}</sup>
+            </div>
+
+            <div class="arc-post">
+                {{ range .Site.RegularPages.ByDate.Reverse }}
+                {{ if eq .Type "posts" }}
+                <!-- Tương thích với plugin Templater của Obsidian -->
+                {{if (ne .Title "<% tp.file.title %>")}}
+                <div class="arc-post-item">
+                    <div class="arc-post-meta">
+                        <span class="arc-post-date">{{ .Date.Format "2006-01-02" }}</span>
+                        <a href="{{.Permalink}}" class="arc-post-title">{{ .Title }}</a>
+                    </div>
+                    {{ if .Params.tags }}
+                    <div class="arc-post-tags">
+                        {{ range .Params.tags }}
+                        <span class="tag">#{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+</div>

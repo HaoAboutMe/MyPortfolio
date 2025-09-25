@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="container-main container-home">
+<!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md-->
+   <div class="content-md">
+       {{.Content}}
+   </div>
+
+   <!-- Thanh điều hướng nhỏ -->
+    {{- partial "_contact" . -}}
+
+    <!-- Danh sách bài viết không bị trùng lặp -->
+    <div class="container-posts">
+        <div class="count">Có tổng cộng {{ len .Site.RegularPages }} bài viết</div>
+        
+        <div class="posts-list">
+            {{ range (.Paginate (.Site.RegularPages.ByDate.Reverse)).Pages }}
+            {{ if eq .Type "posts" }}
+            {{if (ne .Title "<% tp.file.title %>")}}
+            <article class="post-item">
+                <div class="post-meta">
+                    <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+                    <h3 class="post-title">
+                        <a href="{{.Permalink}}">{{ .Title }}</a>
+                    </h3>
+                </div>
+                
+                {{ if .Params.tags }}
+                <div class="post-tags">
+                    {{ range .Params.tags }}
+                    <span class="tag">#{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+                
+                {{ if .Summary }}
+                <div class="post-summary">{{ .Summary | markdownify }}</div>
+                {{ end }}
+            </article>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
+        
+        <!-- Phân trang -->
+        <div class="container-pagination">
+            {{ template "_internal/pagination.html" . }}
+        </div>
+    </div>
+
+</div>
+{{ end }}

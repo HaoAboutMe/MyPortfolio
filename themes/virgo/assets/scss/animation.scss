@@ -1,0 +1,13 @@
+$animation-duration: 2s;
+body.active-animate {
+    animation: fadeIn $animation-duration;
+    // animation: headShake $animation-duration;
+    // animation: slideInUp $animation-duration;
+	overflow-x: hidden;
+
+    #header, 
+	#content .container-main > div:not(.toc),
+	#footer {
+        animation: headShake $animation-duration;
+    }
+}
