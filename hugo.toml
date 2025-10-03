@@ -62,7 +62,7 @@ ignoreLogs = ['warning-partial-superfluous-prefix']
         # Đặt background thành '', mặc định là `#000`
         # ! Để đảm bảo hiệu quả hiển thị, khuyến nghị chọn hình ảnh tỷ lệ 1:1
         # src = 'cat.svg'
-        src = 'wukong.png'
+        src = 'avatar-hao.jpg'
         background = '#0003'
         # Gắn chức năng liên kết nhấp chuột cho hình ảnh này, mặc định là `/about`, tất nhiên
         # bạn cũng có thể định nghĩa thành bất kỳ liên kết nào bạn muốn
