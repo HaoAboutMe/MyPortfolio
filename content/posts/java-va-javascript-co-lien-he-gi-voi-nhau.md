@@ -1,7 +1,7 @@
 ---
 title: "Java và Javascript có liên hệ gì với nhau?"
 date: 2025-09-25
-tags: ["java", "Web development", "Sinh Viên IT", "Lập trình"] 
+tags: ["Java", "Web development", "Sinh Viên IT", "Lập trình"] 
 ---
 
 ## Java và Javascript có thật sự liên quan?

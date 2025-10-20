@@ -1,7 +1,7 @@
 ---
 title: "Hành trình học JavaScript Essential 1 & 2 trên NetAcad"
 date: 2025-09-27
-tags: ["javascript", "web development", "Sinh Viên IT", "Lập trình"] 
+tags: ["Javascript", "Web development", "Sinh Viên IT", "Lập trình"] 
 ---
 
 ## Bắt đầu với JavaScript Essential

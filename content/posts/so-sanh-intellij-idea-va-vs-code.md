@@ -2,7 +2,7 @@
 title: "So sánh IntelliJ IDEA và VS Code – trải nghiệm cá nhân"
 date: 2025-09-29T11:00:00+07:00
 draft: false
-tags: ["intellij", "vscode", "java", "javascript", "IDE", "Sinh Viên IT"]
+tags: ["Intellij", "vscode", "Java", "Javascript", "IDE", "Sinh Viên IT"]
 categories: ["Chia sẻ kiến thức", "Tips cho sinh viên IT"]
 ---
 
